@@ -11,21 +11,8 @@ var documentInit = {
 		this.initModal();
 		this.initScroll();
 		this.initSteps();
-		this.initLang();
 	},
-	initLang: function () {
-		$('.menu .has-btn .btn').each(function(){			var hold = $(this);			var body = $('body');
-			var html = $('html');			hold.click(function(){				if(body.hasClass('spanish')){
-					body.removeClass('spanish');
-					html.attr('lang','en')
-					$.datepicker.setDefaults( $.datepicker.regional.en )
-				}
-				else{
-					body.addClass('spanish')
-					html.attr('lang','es')
-					$.datepicker.setDefaults( $.datepicker.regional.es )
-				}				return false;			});		});
-	},
+
 	initPicker: function(){
 		$('.form').each(function(){
 			var hold = $(this);

@@ -1,8 +1,8 @@
 @font-face {
 	font-family:'Conv_PT_Medium';
 	src: url('../fonts/PT Root UI_Medium.eot');
-	src: url('../fonts/PT Root UI_Medium.woff') format('woff'), 
-		url('../fonts/PT Root UI_Medium.ttf') format('truetype'), 
+	src: url('../fonts/PT Root UI_Medium.woff') format('woff'),
+		url('../fonts/PT Root UI_Medium.ttf') format('truetype'),
 		url('../fonts/PT Root UI_Medium.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -10,8 +10,8 @@
 @font-face {
 	font-family: 'Conv_PT_Bold';
 	src: url('../fonts/PT Root UI_Bold.eot');
-	src: url('../fonts/PT Root UI_Bold.woff') format('woff'), 
-	url('../fonts/PT Root UI_Bold.ttf') format('truetype'), 
+	src: url('../fonts/PT Root UI_Bold.woff') format('woff'),
+	url('../fonts/PT Root UI_Bold.ttf') format('truetype'),
 	url('../fonts/PT Root UI_Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -83,7 +83,7 @@ a:hover {
 }
 a.link-custom:hover:after{
 	width:100%;
-} 
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -332,7 +332,7 @@ h1,h2,h3,h3,h5{
 }
 .nav .menu a.btn:focus:after{
 	display:none;
-	
+
 }
 .holder{
 	width:100%;
@@ -498,7 +498,7 @@ h1,h2,h3,h3,h5{
 	letter-spacing: 0;
 	line-height: 20px;
 	margin: 0 0 10px;
-	
+
 }
 .btn-red{
 	display:inline-block;	vertical-align:top;	font-family: 'Conv_PT_Bold';
@@ -857,7 +857,7 @@ h1,h2,h3,h3,h5{
 	width:100%;
 	overflow:hidden;
 	margin:0 0 28px;
-	
+
 }
 .btn-arrow{
 	height: 64px;
@@ -879,7 +879,7 @@ h1,h2,h3,h3,h5{
 	line-height: 32px;
 	font-family: "ibarra_real_novabold";
 	margin:0 0 10px;
-	
+
 }
 .modal .form-holder .hold-box .btn-red{
 	float:left;
@@ -895,7 +895,7 @@ h1,h2,h3,h3,h5{
 }
 .modal .form-holder .hold-box .btn-arrow{
 	float:left;
-	margin:0 16px 0 0 ;	
+	margin:0 16px 0 0 ;
 }
 .modal .head h3{
 	float:left;
@@ -952,7 +952,7 @@ h1,h2,h3,h3,h5{
 .modal .hold-box:after {	content:"";	display:block;	clear:both;}
 .fader.active{
 	display:block;
-	
+
 }
 
 .modal .form-holder .hold-box{
@@ -1047,9 +1047,9 @@ h1,h2,h3,h3,h5{
 }
 .ui-datepicker:after {	content:"";	display:block;	clear:both;
 	position: absolute;
-	left: 20px; 
-	top: -20px; 
-	border: 10px solid transparent; 
+	left: 20px;
+	top: -20px;
+	border: 10px solid transparent;
 	border-bottom: 10px solid #fff;}
 .ui-datepicker.above:after {
 	content:"";
@@ -1058,8 +1058,8 @@ h1,h2,h3,h3,h5{
 	position: absolute;
 	left: 20px;
 	top:auto;
-	bottom: -20px; 
-	border: 10px solid transparent; 
+	bottom: -20px;
+	border: 10px solid transparent;
 	border-top: 10px solid #fff;
 }
 .ui-datepicker-calendar{
@@ -1089,7 +1089,7 @@ h1,h2,h3,h3,h5{
 	text-align: center;
 	font-family:'Conv_PT_Medium';
 	font-weight:normal;
-	
+
 }
 .ui-datepicker-calendar td:hover .ui-state-default{
 	background-color: #F1F3F5;
@@ -1176,15 +1176,6 @@ h1,h2,h3,h3,h5{
 }
 .ui-datepicker-calendar td.ui-state-disabled .ui-state-default{
 	color: rgba(18,22,25,0.4);
-}
-span.spanish{
-	display:none !important;
-}
-body.spanish span.spanish{
-	display:inline !important;
-}
-body.spanish span.english{
-	display:none !important;
 }
 @media(max-width: 1200px) {
 	.content{
@@ -1301,7 +1292,7 @@ body.spanish span.english{
 		display:block;
 	}
 	#header.sticky .link-open{
-		
+
 		background: url(../images/menu-icon-sticker.svg) no-repeat 50% 50%;
 	}
 	#header.sticky .head-holder{
@@ -1311,7 +1302,7 @@ body.spanish span.english{
 @media(max-width: 910px) {
 	.modal{
 		width:auto;
-		
+
 	}
 	.modal.active{
 		margin:0 ;
@@ -1364,7 +1355,7 @@ body.spanish span.english{
 		display:block;
 	}
 	.content{
-		padding:0 16px; 
+		padding:0 16px;
 	}
 	#header .head-holder, .footer-holder{
 		padding-left: 16px;
@@ -1372,7 +1363,7 @@ body.spanish span.english{
 	}
 	#intro{
 		padding-top:150px;
-		padding-bottom:50px;	
+		padding-bottom:50px;
 	}
 	.content h1{
 		font-size:64px;		line-height:64px;
@@ -1472,38 +1463,9 @@ body.spanish span.english{
 	.content dl dt{
 		margin:0 0 4px;
 	}
-	
+
 	.footer-holder .btn-footer{
 		display:block;
 		text-align:center;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
