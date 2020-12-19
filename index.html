@@ -228,16 +228,9 @@
 											<input type="text" required="required" id="employerName" name="employerName" class="text-input" value="" />
 											<label for="employerName"><span class="english">Name of Employer</span><span class="spanish">Nombre de Empleador</span></label>
 										</div>
-										<strong class="title"><span class="english">Dates of Employment</span><span class="spanish">Fechas de Empleo</span></strong>
-										<div class="hold-box">
-											<div class="form-group">
-												<input type="text" readonly required="required" id="date-from" name="Period-from" class="text-input date-picker" value="" />
-												<label for="date-from"><span class="english">From</span><span class="spanish">Desde</span></label>
-											</div>
-											<div class="form-group">
-												<input type="text"  readonly required="required" id="date-to" name="Period-to" class="text-input date-picker" value="" />
-												<label for="date-to"><span class="english">To</span><span class="spanish">Hasta</span></label>
-											</div>
+										<div class="form-group">
+											<input type="text" required="required" id="datesEmployed" name="datesEmployed" class="text-input" value="" />
+											<label for="datesEmployed"><span class="english">Dates of Employment</span><span class="spanish">Fechas de Empleo</span></label>
 										</div>
 									</div>
 									<div class="form-group">
@@ -259,13 +252,8 @@
 										<label for="datesOfHarassment"><span class="english">Dates/Period of Harassment</span><span class="spanish">Fechas/Período de acoso</span></label>
 									</div>
 									<div class="form-group">
-										<select id="totalEmployees" required="required" id="totalEmployees" name="totalEmployees" class="text-input" value="" >
-										  <option value=">10">1-2</option>
-										  <option value="10-50">2-5</option>
-										  <option value="51-100">5-9</option>
-										  <option value="101+">10+</option>
-										</select>
-										<label for="totalEmployees"><span class="english">Number of Incidents</span><span class="spanish">Número total de incidentes de acoso</span></label>
+										<input type="text" required="required" id="numberIncidents" name="numberIncidents" class="text-input" value="" />
+										<label for="numberIncidents"><span class="english">Number of Incidents</span><span class="spanish">Número total de incidentes de acoso</span></label>
 									</div>
 								</li>
 								<li>
@@ -273,10 +261,7 @@
 										<input type="text" required  id="totalEmployees" name="totalEmployees" class="text-input" value="" />
 										<label for="totalEmployees"><span class="english">Estimated Total Number of Employees</span><span class="spanish">Estimated Total Number of Employees</span></label>
 									</div>
-									<div class="form-group">
-										<input type="text" required  id="datesOfHarassment" name="datesOfHarassment" class="text-input" value="" />
-										<label for="datesOfHarassment"><span class="english">Dates/period of harassment</span><span class="spanish">Dates/period of harassment</span></label>
-									</div>
+
 									<div class="form-group">
 										<input type="text" required  id="harassersTitle" name="harassersTitle" class="text-input" value="" />
 										<label for="harassersTitle"><span class="english">Harasser's Job Title</span><span class="spanish">Harasser's Job Title</span></label>
