@@ -200,7 +200,7 @@
 							<div class="head">
 								<h3><span class="english">Virtual Case Review</span><span class="spanish">Revisión de caso virtual</span></h3>
 								<span class="number-step">
-									<span class="current">1</span>of<span class="total">4</span>
+									<span class="current">1</span>of<span class="total">6</span>
 								</span>
 							</div>
 							<ul class="step-tabs">
@@ -258,62 +258,59 @@
 								</li>
 								<li>
 									<div class="form-group">
-										<input type="text" required  id="totalEmployees" name="totalEmployees" class="text-input" value="" />
-										<label for="totalEmployees"><span class="english">Estimated Total Number of Employees</span><span class="spanish">Estimated Total Number of Employees</span></label>
-									</div>
-
-									<div class="form-group">
-										<input type="text" required  id="harassersTitle" name="harassersTitle" class="text-input" value="" />
-										<label for="harassersTitle"><span class="english">Harasser's Job Title</span><span class="spanish">Harasser's Job Title</span></label>
-									</div>
-								</li>
-								<li>
-									<div class="form-wrap">
-										<strong class="title"><span class="english">Are there witnesses/evidence?</span><span class="spanish">Hay testigos?</span></strong>
-										<div class="hold-radio-box">
-											<div class="hold-radio first">
-												<input type="radio" required name="witnesses" id="witnesses" />
-												<label for="witnesses"><span class="english">Yes</span><span class="spanish">Si</span></label>
-											</div>
-											<div class="hold-radio">
-												<input type="radio" required name="witnesses" id="witnesses1" />
-												<label for="witnesses1"><span class="english">No</span><span class="spanish">No</span></label>
-											</div>
-										</div>
-									</div>
-									<div class="form-wrap">
-										<strong class="title"><span class="english">Was a complaint made to management about harassment?</span><span class="spanish">Fue presentada una queja a la gerencia sobre el acoso?</span></strong>
-										<div class="hold-radio-box">
-											<div class="hold-radio first">
-												<input type="radio" required name="harassment" id="harassment" />
-												<label for="harassment"><span class="english">Yes</span><span class="spanish">Si</span></label>
-											</div>
-											<div class="hold-radio">
-												<input type="radio" required name="harassment" id="harassment1" />
-												<label for="harassment1"><span class="english">No</span><span class="spanish">No</span></label>
-											</div>
-										</div>
+										<input type="text" required="required" id="witnesses" name="witnesses" class="text-input" value="" />
+										<label for="witnesses"><span class="english">Witnesses/evidence</span><span class="spanish">Witnesses/evidence</span></label>
 									</div>
 									<div class="form-text">
 										<div class="form-group">
-											<textarea maxlength="256" id="textarea" class="text-input"  name="Summary" cols="1" rows="1"></textarea>
-											<label for="textarea"><span class="english">Summary of case</span><span class="spanish">Resumen del Caso</span></label>
+											<textarea maxlength="256" id="descriptionHarassment" class="text-input"  name="descriptionHarassment" cols="1" rows="1"></textarea>
+											<label for="descriptionHarassment"><span class="english">Description of harassment</span><span class="spanish">Descripción del acoso</span></label>
+										</div>
+										<span class="count-symbols"><span class="number">0</span>/<span class="total">256</span></span>
+									</div>
+									<div class="form-text">
+										<div class="form-group">
+											<textarea maxlength="256" id="complaint" class="text-input"  name="complaint" cols="1" rows="1"></textarea>
+											<label for="complaint"><span class="english">Describe any complaint made to management</span><span class="spanish">Describa cualquier queja hecha a la gerencia</span></label>
 										</div>
 										<span class="count-symbols"><span class="number">0</span>/<span class="total">256</span></span>
 									</div>
 								</li>
-								<li class=" last">
+								<li>
 									<div class="form-group">
-										<input type="text" required  id="modalName" name="Name" class="text-input" value="" />
-										<label for="modalName"><span class="english">Your name</span><span class="spanish">Su nombre</span></label>
+										<select id="typeEmployment" required="required" name="totalEmployees" class="text-input" value="" >
+										  <option value="W2"><span class="english">Employee (W2)</span><span class="spanish">Empleado (W2)</span></option>
+										  <option value="1099"><span class="english">Independent Contractor (1099)</span><span class="spanish">Contratista Independiente (1099)</span></option>
+										  <option value="intern"><span class="english">Intern/Volunteer</span><span class="spanish">Pasante/Voluntario</span></option>
+										  <option value="dontknow"><span class="english">I don't know</span><span class="spanish">No lo se</span></option>
+										</select>
+										<label for="typeEmployment"><span class="english">Type of Employment</span><span class="spanish">Tipo de empleo</span></label>
 									</div>
 									<div class="form-group">
-										<input type="text" required  id="modalPhone" name="Phone" class="text-input" value="" />
-										<label for="modalPhone"><span class="english">Your phone number</span><span class="spanish">Su número de teléfono</span></label>
+										<select id="typeEmployer" required="required" name="typeEmployer" class="text-input" value="" >
+											<option value="private"><span class="english">Private</span><span class="spanish">Privado</span></option>
+											<option value="milgov"><span class="english">Military/Government</span><span class="spanish">Militar/Gobierno</span></option>
+											<option value="nonprofit"><span class="english">Nonprofit</span><span class="spanish">Organización sin ánimo de lucro</span></option>
+											<option value="other"><span class="english">Other</span><span class="spanish">Otro</span></option>
+											<option value="dontknow"><span class="english">I don't know</span><span class="spanish">No lo se</span></option>
+										</select>
+										<label for="typeEmployer"><span class="english">Type of Employer</span><span class="spanish">Tipo de empleador</span></label>
 									</div>
 									<div class="form-group">
-										<input type="email" required autocomplete="off" id="modalEmail" name="Email" class="text-input" value="" />
-										<label for="modalEmail"><span class="english">Your Email</span><span class="spanish">Su email</span></label>
+										<select id="totalEmployees" required="required" name="totalEmployees" class="text-input" value="" >
+										  <option value=">10">1-2</option>
+										  <option value="10-50">2-5</option>
+										  <option value="51-100">5-9</option>
+										  <option value="101+">10+</option>
+										</select>
+										<label for="totalEmployees"><span class="english">Total Number of Employees</span><span class="spanish">Número de empleados en la compañía</span></label>
+									</div>
+									<div class="form-text">
+										<div class="form-group">
+											<textarea maxlength="256" id="summary" class="text-input"  name="summary" cols="1" rows="1"></textarea>
+											<label for="summary"><span class="english">Case summary/Additional Notes</span><span class="spanish">Resumen del caso / Notas adicionales</span></label>
+										</div>
+										<span class="count-symbols"><span class="number">0</span>/<span class="total">256</span></span>
 									</div>
 								</li>
 							</ul>
