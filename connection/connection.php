@@ -1,7 +1,7 @@
 <?php
 	//****************************************
 	//edit here
-	$to = 'india@indialinbodienlaw.com';
+	$to = 'bookis.worthy@gmail.com';
 	//****************************************
 
 	// mail headers
