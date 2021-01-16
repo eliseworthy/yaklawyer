@@ -196,26 +196,6 @@ var documentInit = {
 				});
 			});
 
-			hold.submit(function(e){
-				e.preventDefault();
-				$.ajax({
-					type: 'POST',
-					data: hold.serialize(),
-					url: hold.attr('action'),
-					success: function(msg){
-						hold.trigger("reset");
-						$('.modal').removeClass('active');
-						$('.fader').css({display: 'none'});
-					},
-					error: function(){
-							hold.trigger("reset");
-						$('.modal').removeClass('active');
-						$('.fader').css({display: 'none'});
-						alert('Server is unavailable. Refresh the page within 15 seconds.!');
-					}
-				});
-
-			})
 			hold.on('reset',function(){
 				input.each(function(){
 					$(this).parent().removeClass('typing has-value');
